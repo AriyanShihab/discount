@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mainBG: "#e5f2fe",
+                        redBtn: "#ff136f",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            background: #e5f2fe;
+        }
+        
+        * {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+    <title>ShoeHouse</title>
+</head>
+
+<body>
+    <main>
+        <div class="container p-5 lg:w-3/4 mx-auto">
+            <div class="row flex justify-center items-center min-h-screen">
+                <div class="flex justify-between flex-col md:flex-row gap-5 p-5 rounded-xl border border-gray-700 border-opacity-50 shadow-inner">
+                    <div class="productImage p-3 md:min-w-[50%] flex items-center">
+                        <img id="product" src="./images/def.png" alt="" class="md:w-[325px] w-[250px] object-cover mx-auto" />
+                    </div>
+                    <div class="productDescription">
+                        <h2 class="font-extrabold text-3xl my-4" id="productName">
+                            Nike Model 1992
+                        </h2>
+                        <p id="productDescription">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, qui in temporibus porro possimus expedita autem itaque commodi vitae maiores!
+                        </p>
+                        <h1 id="pp" class="text-5xl font-black my-3 text-red-500">
+                            $ <span id="ProductPrice">79</span>
+                        </h1>
+                        <div class="my-2 flex justify-between sm:w-4/6 mb-4" id="buttonHolder">
+                            <button id="orange" class="bg-orange-600 px-5 py-1 rounded font-semibold text-white">
+                  Orange
+                </button>
+                            <button id="green" class="bg-green-600 px-5 py-1 rounded font-semibold text-white">
+                  Green
+                </button>
+                            <button id="blue" class="bg-blue-600 px-5 py-1 rounded font-semibold text-white">
+                  Blue
+                </button>
+                        </div>
+                        <p class="capitalize">
+                            get 30% discount by using cuppon Code
+                            <span class="text-orange-600 font-black text-2xl">borolok</span>
+                        </p>
+                        <div>
+                            <input type="text" id="cuppon" placeholder="cuppon code" class="border-none outline-none p-3 rounded m-3 bg-orange-600 text-white ml-0" />
+                            <button id="buyNow" class="bg-orange-600 px-5 py-3 font-extrabold text-white rounded">
+                  Buy Now
+                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/discount.js"></script>
+    <script src="./js/changeShoe.js"></script>
+</body>
+
+</html>
