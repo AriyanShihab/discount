@@ -9,7 +9,7 @@ btnHolder.addEventListener("click", function(e) {
     const btn = e.target;
     const id = btn.getAttribute("id");
     if (id === "orange") {
-        setImageSource.setAttribute("src", "../images/orange.png");
+        setImageSource.setAttribute("src", "./images/orange.png");
         pp.style.color = "#ea580c";
         productName.style.color = "#ea580c";
         ProductPrice.innerHTML = "99";
@@ -21,7 +21,7 @@ btnHolder.addEventListener("click", function(e) {
         updateValue(99);
     }
     if (id === "green") {
-        setImageSource.setAttribute("src", "../images/green.png");
+        setImageSource.setAttribute("src", "./images/green.png");
         pp.style.color = "#16a34a";
         productName.style.color = "#16a34a";
         ProductPrice.innerHTML = "129";
@@ -34,7 +34,7 @@ btnHolder.addEventListener("click", function(e) {
         updateValue(129);
     }
     if (id === "blue") {
-        setImageSource.setAttribute("src", "../images/blue.png");
+        setImageSource.setAttribute("src", "./images/blue.png");
         pp.style.color = "#2563eb";
         productName.style.color = "#2563eb";
         ProductPrice.innerHTML = "89";
